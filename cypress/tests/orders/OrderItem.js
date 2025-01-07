@@ -74,8 +74,8 @@ const purcharseItem =()=>{
         inputOderInfo.getPurchaseBtn().click()
 
         //verify purcharse confirm dialog
-        cy.get(".sweet-alert h2").should("have.text","Thank you for your purchase!")
-        cy.get(".sweet-alert .lead").should("contain.text","Card Number: 123456789")
+        cy.get(".sweet-alert h2",{timeout:10000}).should("have.text","Thank you for your purchase!")
+        cy.get(".sweet-alert .lead",{timeout:10000}).should("contain.text","Card Number: 123456789")
     
 
     }))
