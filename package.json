@@ -1,0 +1,20 @@
+{
+  "name": "study_cypress_2025",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "dependencies": {
+    "cypress": "^12.12.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "scripts": {
+    "dev": "cypress open",
+    "test": "cypress run --browser chrome --headed",
+    "test:mocha-reporter": "yarn test --reporter mochawesome --reporter-options reportDir='cypress/results',overwrite=false,html=false,json=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
