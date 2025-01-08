@@ -1,5 +1,5 @@
 describe("exploring default command timeout",()=>{
-//describe("exploring default command timeout",{defaultCommandTimeout:5000},()=>{
+//describe("exploring default command timeout",{defaultCommandTimeout:5000},()=>{   
     it("should be able to apply default timeout",()=>{
         cy.visit("https://the-internet.herokuapp.com/")
         
